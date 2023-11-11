@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(123deg, #e532aa, #19b);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container .calculator h1 {
+   font-size: 25px;
+   color: burlywood;
+   margin-bottom: 20px;
+}
+
+.container .calculator .inputContainer {
+    background-color: rgba(255, 246, 246, 0.2);
+    padding: 20px 40px 20px 30px;
+    border-radius: 7px;
+}
+
+.container .calculator .inputContainer input{
+    border: 0;
+    outline: 0;
+    width: 180px;
+    margin-right: 20px;
+    cursor: pointer; 
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 15px;
+} 
+
+.container .calculator .inputContainer button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 8px 20px;
+    background-color: burlywood;
+    border-radius: 7px;
+}
+
+.resultContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+p span {
+    color: rgb(219, 133, 20);
+}
+
+.image {
+    cursor: pointer;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+  }
+  @keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+  }
